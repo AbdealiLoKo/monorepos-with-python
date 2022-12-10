@@ -1,0 +1,43 @@
+{
+  "root": "libs/reports",
+  "projectType": "application",
+  "targets": {
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "venv/bin/pip install -e libs/reports -r libs/reports/requirements.txt"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "venv/bin/flake8 libs/reports",
+          "venv/bin/black --check libs/reports",
+          "venv/bin/isort --check libs/reports"
+        ]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "venv/bin/black libs/reports",
+          "venv/bin/isort libs/reports"
+        ]
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "venv/bin/python -m pytest libs/reports"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "venv/bin/python libs/reports/setup.py sdist"
+      }
+    }
+  }
+}
