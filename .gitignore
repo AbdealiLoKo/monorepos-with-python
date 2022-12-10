@@ -12,3 +12,7 @@
 # Pytest
 **/.pytest_cache
 
+# Pants
+**/.pants.d
+**/.pids
+
