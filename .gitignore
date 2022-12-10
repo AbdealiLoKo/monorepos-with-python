@@ -1,0 +1,14 @@
+# Python
+**/venv*
+**/__pycache__
+**/*.py[cod]
+
+# Node
+**/node_modules
+
+# Pip
+**/*.egg-info
+
+# Pytest
+**/.pytest_cache
+
