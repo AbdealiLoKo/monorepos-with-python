@@ -1,0 +1,14 @@
+pandas
+plotly
+
+# Linters/formatters
+flake8
+black
+isort
+mypy
+
+# Testing
+pytest
+
+# Build
+wheel
