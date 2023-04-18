@@ -4,5 +4,5 @@ Slides can be found at: [link](https://docs.google.com/presentation/d/1HwjFcndvI
 
 This contains some example setups for polyrepo:
 
- - `nx-repo` - This uses `nx` to create a package-based polyrepo
- - `pants-repo` - This uses `pants` to create a integrated polyrepo
+ - `example-package-nx` - This uses `nx` to create a package-based polyrepo
+ - `example-integrated-pants` - This uses `pants` to create a integrated polyrepo
